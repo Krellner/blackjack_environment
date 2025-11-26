@@ -113,7 +113,7 @@ class BlackjackGame:
 
         if self.logging:
             print(f"Player's hand: {player_hand}")
-            print(f"Dealer's hand: {dealer_hand[0]}, ?")
+            print(f"Dealer's upcard: {dealer_hand[0]}, ?")
 
         # Player's turn
         while player_strategy(player_hand, dealer_hand[0]):

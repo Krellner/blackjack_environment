@@ -50,12 +50,12 @@ def calculate_hand_value(hand: list) -> int:
             aces -= 1
         return value
 
-def basic(player_hand: list, dealer_upcard: list) -> bool:
+def basic(player_hand: list, dealer_upcard: str) -> bool:
     """A simple player strategy: hit if hand value < 17, else stand.
     
     Args:
         player_hand (list): Player's hand.
-        dealer_upcard (list): Dealer's visible card.
+        dealer_upcard (str): Dealer's visible card.
     Returns:
         bool: True to hit, False to stand.
     """
